@@ -1,3 +1,14 @@
+"""
+Rules fot the light control panel:
+1. Vehicles on road A should be allowed to pass the intersection without stopping if there's not other traffic.
+2. If at the end of the first cycle there are still some vehicles on road A let's allow them to pass the
+intersection without stopping for yet another cycle.
+3. At the end of the second cycle of vehicles on road A passing the intersection, if there are some vehicles on
+road B waiting - let's grant them (vehicles on road B) one cycle of passage.
+4. If there aren't any vehicles on road A waiting while the first cycle for road B ends then grant yet
+another cycle for road B.
+"""
+
 import time
 import random
 
